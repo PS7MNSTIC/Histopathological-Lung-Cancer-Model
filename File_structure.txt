@@ -1,0 +1,24 @@
+ml_project/
+│
+├── data/
+│   ├── lc25000/
+│   ├── external_test/
+│
+├── outputs/
+│   ├── models/
+│   ├── logs/
+│   ├── plots/
+│
+├── src/
+│   ├── config.py
+│   ├── dataset.py
+│   ├── preprocessing.py
+│   ├── model.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── gradcam.py
+│   ├── utils.py
+│   ├── main.py
+│
+├── requirements.txt
+├── environment.yml

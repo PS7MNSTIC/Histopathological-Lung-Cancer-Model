@@ -1,0 +1,34 @@
+# Core
+numpy
+pandas
+scikit-learn
+scikit-image
+opencv-python
+Pillow
+tqdm
+matplotlib
+seaborn
+
+# Deep Learning
+torch
+torchvision
+torchaudio
+
+# Models
+timm
+
+# Config & Logging
+pyyaml
+loguru
+
+# Explainability
+grad-cam
+
+# Augmentation / GAN
+albumentations
+
+# Graph Learning
+networkx
+
+# Utilities
+joblib
