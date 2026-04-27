@@ -1,0 +1,19 @@
+HAGCA-Net Test Set Evaluation
+============================================================
+accuracy: 0.9991
+precision: 0.9991
+recall: 0.9991
+f1_macro: 0.9991
+roc_auc: 1.0
+n_test: 2272
+checkpoint: hagcanet_best.pth
+
+              precision    recall  f1-score   support
+
+    lung_aca     0.9987    0.9987    0.9987       757
+      lung_n     1.0000    1.0000    1.0000       759
+    lung_scc     0.9987    0.9987    0.9987       756
+
+    accuracy                         0.9991      2272
+   macro avg     0.9991    0.9991    0.9991      2272
+weighted avg     0.9991    0.9991    0.9991      2272

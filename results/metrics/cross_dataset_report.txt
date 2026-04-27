@@ -1,0 +1,19 @@
+HAGCA-Net Cross-Dataset Evaluation — PatchCamelyon
+============================================================
+dataset: PatchCamelyon_test
+n_samples: 32768
+accuracy: 0.5754
+precision: 0.5441
+recall: 0.9286
+f1_binary: 0.6861
+roc_auc: 0.5987
+checkpoint: hagcanet_best.pth
+
+              precision    recall  f1-score   support
+
+      Normal     0.7572    0.2224    0.3439     16391
+       Tumor     0.5441    0.9286    0.6861     16377
+
+    accuracy                         0.5754     32768
+   macro avg     0.6506    0.5755    0.5150     32768
+weighted avg     0.6507    0.5754    0.5149     32768

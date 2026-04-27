@@ -1,0 +1,17 @@
+{
+  "scenario": "PCam_trained_PCam_tested",
+  "train_data": "PatchCamelyon",
+  "test_data": "PatchCamelyon",
+  "n_train": 30000,
+  "n_test": 32768,
+  "num_classes": 2,
+  "accuracy": 0.8359,
+  "precision": 0.8062,
+  "recall": 0.8843,
+  "f1_binary": 0.8434,
+  "roc_auc": 0.9223,
+  "checkpoint": "hagcanet_pcam_best.pth",
+  "val_f1": 0.8428,
+  "best_epoch": 1,
+  "preprocessing": "ReinhardNorm(PCam-ref) + CLAHE"
+}

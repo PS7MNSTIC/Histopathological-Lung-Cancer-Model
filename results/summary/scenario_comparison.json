@@ -1,0 +1,47 @@
+{
+  "generated": "2026-04-27T09:17:17.674562",
+  "scenarios": [
+    {
+      "label": "S1: LC25000 \u2192 LC25000",
+      "train_data": "LC25000 (lung)",
+      "test_data": "LC25000 (lung)",
+      "n_test": 2272,
+      "task": "3-class (aca / n / scc)",
+      "accuracy": 0.9991,
+      "f1": 0.9991,
+      "roc_auc": 1.0,
+      "precision": 0.9991,
+      "recall": 0.9991,
+      "f1_label": "F1-macro",
+      "domain_shift": false
+    },
+    {
+      "label": "S2: LC25000 \u2192 PCam (zero-shot)",
+      "train_data": "LC25000 (lung)",
+      "test_data": "PatchCamelyon (lymph node)",
+      "n_test": 32768,
+      "task": "Binary (normal / tumor)",
+      "accuracy": 0.5754,
+      "f1": 0.6861,
+      "roc_auc": 0.5987,
+      "precision": 0.5441,
+      "recall": 0.9286,
+      "f1_label": "F1-binary",
+      "domain_shift": true
+    },
+    {
+      "label": "S3: PCam \u2192 PCam",
+      "train_data": "PatchCamelyon (lymph node)",
+      "test_data": "PatchCamelyon (lymph node)",
+      "n_test": 32768,
+      "task": "Binary (normal / tumor)",
+      "accuracy": 0.8359,
+      "f1": 0.8434,
+      "roc_auc": 0.9223,
+      "precision": 0.8062,
+      "recall": 0.8843,
+      "f1_label": "F1-binary",
+      "domain_shift": false
+    }
+  ]
+}

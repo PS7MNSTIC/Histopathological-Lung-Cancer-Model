@@ -1,0 +1,14 @@
+{
+  "accuracy": 0.9991,
+  "precision": 0.9991,
+  "recall": 0.9991,
+  "f1_macro": 0.9991,
+  "roc_auc": 1.0,
+  "f1_per_class": {
+    "lung_aca": 0.9987,
+    "lung_n": 1.0,
+    "lung_scc": 0.9987
+  },
+  "n_test": 2272,
+  "checkpoint": "hagcanet_best.pth"
+}

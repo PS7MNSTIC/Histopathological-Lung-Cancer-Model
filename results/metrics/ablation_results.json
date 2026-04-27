@@ -1,0 +1,42 @@
+[
+  {
+    "variant": "V1: CNN-Only",
+    "use_cnn": true,
+    "use_transformer": false,
+    "use_graph": false,
+    "use_attention": false,
+    "accuracy": 0.5075,
+    "f1_macro": 0.4636,
+    "roc_auc": NaN
+  },
+  {
+    "variant": "V2: +Transformer",
+    "use_cnn": true,
+    "use_transformer": true,
+    "use_graph": false,
+    "use_attention": false,
+    "accuracy": 0.5264,
+    "f1_macro": 0.4959,
+    "roc_auc": NaN
+  },
+  {
+    "variant": "V3: +Graph",
+    "use_cnn": true,
+    "use_transformer": true,
+    "use_graph": true,
+    "use_attention": false,
+    "accuracy": 0.5427,
+    "f1_macro": 0.4592,
+    "roc_auc": NaN
+  },
+  {
+    "variant": "V4: Full HAGCA-Net",
+    "use_cnn": true,
+    "use_transformer": true,
+    "use_graph": true,
+    "use_attention": true,
+    "accuracy": 0.9991,
+    "f1_macro": 0.9991,
+    "roc_auc": 1.0
+  }
+]

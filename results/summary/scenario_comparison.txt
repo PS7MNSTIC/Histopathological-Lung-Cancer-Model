@@ -1,0 +1,41 @@
+=================================================================
+  HAGCA-Net — THREE-SCENARIO COMPARISON
+  Generated: 2026-04-27 09:17:17
+=================================================================
+
+  SCENARIOS
+  ---------
+  S1: Train=LC25000 (lung),  Test=LC25000 (lung)   [3-class]
+  S2: Train=LC25000 (lung),  Test=PCam    (lymph)  [binary, zero-shot]
+  S3: Train=PCam    (lymph), Test=PCam    (lymph)  [binary]
+
+=================================================================
+  Metric                S1 (LC->LC)  S2 (LC->PCam)  S3 (PCam->PCam)
+  ---------------------------------------------------------------
+  Accuracy                   0.9991 *        0.5754           0.8359  
+  F1 (task)                  0.9991 *        0.6861           0.8434  
+  ROC-AUC                    1.0000 *        0.5987           0.9223  
+  Precision                  0.9991 *        0.5441           0.8062  
+  Recall                     0.9991 *        0.9286           0.8843  
+
+  * = best value in row
+
+=================================================================
+  KEY FINDINGS
+=================================================================
+
+  1. S1 (in-domain lung): HAGCA-Net achieves near-perfect
+     classification (Accuracy 99.91%, AUC 1.0000).
+
+  2. S2 (zero-shot domain shift): Without any fine-tuning on
+     lymph node images, the model still achieves above-chance AUC
+     (0.5987) and high tumor recall (0.9286).
+     However precision is limited due to severe domain shift.
+
+  3. S3 (in-domain PCam): Fine-tuning on PCam data substantially
+     improves precision (from 0.5441 to 0.8062)
+     and overall accuracy (from 57.54% to 83.59%),
+     confirming that domain-specific training is critical for
+     high-precision deployment in a new tissue type.
+
+=================================================================

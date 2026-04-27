@@ -1,0 +1,15 @@
+{
+  "dataset": "PatchCamelyon_test",
+  "n_samples": 32768,
+  "accuracy": 0.5754,
+  "precision": 0.5441,
+  "recall": 0.9286,
+  "f1_binary": 0.6861,
+  "roc_auc": 0.5987,
+  "class_mapping": {
+    "lung_aca (idx 0)": "tumor (1)",
+    "lung_n   (idx 1)": "normal (0)",
+    "lung_scc (idx 2)": "tumor (1)"
+  },
+  "checkpoint": "hagcanet_best.pth"
+}

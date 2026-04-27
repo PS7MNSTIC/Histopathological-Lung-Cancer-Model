@@ -1,1 +1,0 @@
-# Histopathological-Lung-Cancer-Model
