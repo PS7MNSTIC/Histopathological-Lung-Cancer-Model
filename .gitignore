@@ -1,9 +1,30 @@
+# Datasets (too large for git)
 data/
-outputs/
+
+# Model checkpoints
 *.pth
+checkpoints/
+
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+
+# Env / IDE
 venv/
 .env
+*.egg-info/
+.idea/
+.vscode/
 
+# Claude internal
+.claude/
+
+# Build outputs
+outputs/
 environment.yml
+
+# Logs (auto-generated)
+logs/*.txt
+logs/*.log
+logs/*.csv
